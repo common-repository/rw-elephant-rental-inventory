@@ -1,0 +1,676 @@
+/*--------------------------------------------------------------
+* RW Elephant Rental Inventory Admin Styles
+* @author RW Elephant <support@rwelephant.com>
+* Copyright © 2018 RW Elephant. All Rights Reserved.
+----------------------------------------------------------------
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# SASS Variables
+# Alerts
+# Animations
+# Walkthrough
+# Settings
+--------------------------------------------------------------*/
+/*-- Admin Variables --*/
+/*-- Alert Styles --*/
+.rwe-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .rwe-alert h4 {
+    margin-top: 0;
+    color: inherit; }
+  .rwe-alert a {
+    font-weight: bold; }
+  .rwe-alert > p,
+  .rwe-alert > ul {
+    margin-bottom: 0; }
+  .rwe-alert > p + p {
+    margin-top: 5px; }
+  .rwe-alert.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d; }
+    .rwe-alert.success hr {
+      border-top-color: #c9e2b3; }
+    .rwe-alert.success a {
+      color: #2b542c; }
+  .rwe-alert.info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f; }
+    .rwe-alert.info hr {
+      border-top-color: #a6e1ec; }
+    .rwe-alert.info a {
+      color: #245269; }
+  .rwe-alert.warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b; }
+    .rwe-alert.warning hr {
+      border-top-color: #f7e1b5; }
+    .rwe-alert.warning a {
+      color: #66512c; }
+  .rwe-alert.danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442; }
+    .rwe-alert.danger hr {
+      border-top-color: #e4b9c0; }
+    .rwe-alert.danger a {
+      color: #843534; }
+
+body.settings_page_rw-elephant .rwe-alert {
+  margin-bottom: 0; }
+  body.settings_page_rw-elephant .rwe-alert p {
+    margin-top: 0; }
+  body.settings_page_rw-elephant .rwe-alert .dashicons {
+    height: 18px;
+    width: 15px;
+    font-size: 17px;
+    vertical-align: middle; }
+
+/*-- Animation Styles --*/
+.animated {
+  -webkit-animation-duration: 0.85s;
+  animation-duration: 0.85s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.flash-animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * Transition Out
+ */
+@-webkit-keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight; }
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/**
+ * Transition In
+ */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash; }
+
+/*--------------------------------------------------------------
+# Walkthrough Styles
+--------------------------------------------------------------*/
+/*-- Walkthrough Styles --*/
+.rwe-walkthrough {
+  display: none; }
+
+.featherlight .featherlight-close-icon {
+  top: 10px;
+  left: 10px;
+  font-size: 1.2em; }
+
+.featherlight.rw-elephant-walkthrough {
+  background: rgba(0, 0, 0, 0.8); }
+  .featherlight.rw-elephant-walkthrough .rwe-walkthrough {
+    display: none;
+    font-size: 16px; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .rwe-preloader {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: -1;
+      max-width: 188px; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .rwe-preloader-final {
+      display: block;
+      margin: 0 auto;
+      max-width: 188px; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough h2 {
+      margin: 0;
+      font-size: 1.4em; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .current-step {
+      margin: .75em 0 2em 0;
+      font-size: .88rem;
+      font-style: italic; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap {
+      display: flex;
+      align-items: flex-start;
+      margin: 0; }
+      .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section {
+        flex: 1;
+        font-size: 16px; }
+        .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section:first-child {
+          padding-left: 1em; }
+        .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section img {
+          width: 100%;
+          max-width: 100%; }
+        .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > p {
+          font-size: 16px; }
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > p:first-child {
+            margin-top: 0; }
+        .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field {
+          display: flex;
+          align-items: center;
+          margin: 1em 0; }
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field label {
+            order: 1;
+            min-width: 130px;
+            padding-left: 0.5em; }
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field input[type="text"],
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field select,
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field em.no-pages-found {
+            order: 2;
+            flex: 1 1 auto;
+            padding: 5px;
+            border-radius: 3px; }
+          .featherlight.rw-elephant-walkthrough .rwe-walkthrough div.wrap > div.section > div.form-field input.required-field {
+            border: 1px solid #ebccd1;
+            background-color: #f2dede; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .actions {
+      display: flex;
+      margin-top: 2em;
+      padding: 0 0 10px 0;
+      text-align: center; }
+      .featherlight.rw-elephant-walkthrough .rwe-walkthrough .actions .button {
+        padding: 3px 10px;
+        height: auto;
+        margin: 0 auto;
+        font-size: 15px; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .text-center {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .featherlight.rw-elephant-walkthrough .rwe-walkthrough .js-go-to-step {
+      font-size: 15px; }
+  .featherlight.rw-elephant-walkthrough .featherlight-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px 40px 10px 40px;
+    border-radius: 6px;
+    /**
+     * Steps
+     */ }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .rwe-walkthrough {
+      display: block; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step .actions .button {
+      text-align: center; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-1 .section--logo {
+      flex-basis: 45%;
+      flex-grow: 0; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-1 .section--text {
+      width: 55%; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-1 .walkthrough-logo {
+      max-width: 260px;
+      margin: 2.5em auto 0; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-2 .section--text {
+      margin-top: 55px; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-2 .walkthrough-demo {
+      max-width: 320px;
+      margin: 0 auto; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-3 .section--pages {
+      flex-basis: 45%;
+      flex-grow: 0; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-3 .section--text {
+      width: 55%; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-4 .section--final {
+      padding: 0 20px;
+      flex-basis: 35%;
+      flex-grow: 0; }
+    .featherlight.rw-elephant-walkthrough .featherlight-content .step.step-4 .section--text {
+      margin-top: 25px;
+      width: 65%; }
+
+/*--------------------------------------------------------------
+# Settings Styles
+--------------------------------------------------------------*/
+/*-- Settings Styles --*/
+body.settings_page_rw-elephant {
+  /*-- Toggle Styles --*/ }
+  body.settings_page_rw-elephant .toggle input:disabled + .toggle-control {
+    opacity: 0.25; }
+  body.settings_page_rw-elephant .toggle .toggle-control {
+    transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    width: 2.5em;
+    height: 1.25em;
+    display: block;
+    border: 2px solid #8E8E93;
+    border-radius: 1.25em;
+    background-color: rgba(0, 0, 0, 0.06);
+    position: relative; }
+    body.settings_page_rw-elephant .toggle .toggle-control:after {
+      transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+      content: "";
+      width: 1.25em;
+      height: 1.25em;
+      display: block;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 3px 2px rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      right: 0; }
+  body.settings_page_rw-elephant .toggle input {
+    display: none; }
+    body.settings_page_rw-elephant .toggle input:checked + .toggle-control {
+      border-color: #2A95CD;
+      background-color: #2A95CD;
+      /*
+       * Admin colour overrides
+       */ }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.light {
+        border-color: #04a4cc;
+        background-color: #04a4cc; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.blue {
+        border-color: #e1a948;
+        background-color: #e1a948; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.coffee {
+        border-color: #c7a589;
+        background-color: #c7a589; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.ectoplasm {
+        border-color: #a3b745;
+        background-color: #a3b745; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.midnight {
+        border-color: #e14d43;
+        background-color: #e14d43; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.ocean {
+        border-color: #9ebaa0;
+        background-color: #9ebaa0; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control.sunrise {
+        border-color: #dd823b;
+        background-color: #dd823b; }
+      body.settings_page_rw-elephant .toggle input:checked + .toggle-control:after {
+        right: 1.25em; }
+  body.settings_page_rw-elephant .settings-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5em; }
+    body.settings_page_rw-elephant .settings-title h2,
+    body.settings_page_rw-elephant .settings-title .rwe-version-badge {
+      float: right;
+      vertical-align: middle; }
+    body.settings_page_rw-elephant .settings-title .rwe-version-badge {
+      padding: 3px 8px;
+      font-size: 10px;
+      background: #258AC6;
+      color: #fefefe;
+      margin-right: 12px;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 3px; }
+      body.settings_page_rw-elephant .settings-title .rwe-version-badge:hover {
+        cursor: pointer; }
+  body.settings_page_rw-elephant .rwe-api-connection-status {
+    max-width: 150px;
+    text-align: center; }
+  body.settings_page_rw-elephant #poststuff hr {
+    margin: 2em 0; }
+  body.settings_page_rw-elephant #poststuff h2.title {
+    font-size: 16px;
+    padding-right: 0; }
+  body.settings_page_rw-elephant #post-body-content input[type="text"],
+  body.settings_page_rw-elephant #post-body-content input[type="password"],
+  body.settings_page_rw-elephant #post-body-content input[type="email"],
+  body.settings_page_rw-elephant #post-body-content textarea,
+  body.settings_page_rw-elephant #post-body-content select {
+    width: 100%;
+    max-width: 350px;
+    padding: 5px; }
+  body.settings_page_rw-elephant #post-body-content .inside {
+    padding: 2em;
+    margin: 0; }
+  body.settings_page_rw-elephant .nav-tab-wrapper a.nav-tab {
+    padding: 5px 20px; }
+    body.settings_page_rw-elephant .nav-tab-wrapper a.nav-tab.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: default; }
+  body.settings_page_rw-elephant .js-add-item-note,
+  body.settings_page_rw-elephant .js-add-item-note .dashicons {
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle; }
+  body.settings_page_rw-elephant .item-notes .icon:hover {
+    cursor: pointer; }
+  body.settings_page_rw-elephant .js-add-item-note {
+    display: inline-block;
+    margin: -2px 15px 0 0; }
+    body.settings_page_rw-elephant .js-add-item-note .dashicons {
+      height: 12px;
+      width: 12px; }
+  body.settings_page_rw-elephant .js-sortable.item-details {
+    max-width: 800px; }
+    body.settings_page_rw-elephant .js-sortable.item-details input {
+      max-width: 325px; }
+    body.settings_page_rw-elephant .js-sortable.item-details .sort-handle:hover {
+      cursor: pointer; }
+  body.settings_page_rw-elephant .js-sortable.wishlist-form-fields {
+    max-width: calc( 300px + 1.5em); }
+  body.settings_page_rw-elephant .js-sortable .wishlist-form-field,
+  body.settings_page_rw-elephant .js-sortable .item-detail,
+  body.settings_page_rw-elephant .js-sortable li.placeholder {
+    padding: 0.75em;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #cecccc;
+    border-radius: 3px;
+    background: #f7f7f7; }
+    body.settings_page_rw-elephant .js-sortable .wishlist-form-field span.dashicons,
+    body.settings_page_rw-elephant .js-sortable .item-detail span.dashicons,
+    body.settings_page_rw-elephant .js-sortable li.placeholder span.dashicons {
+      float: left;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in;
+      color: #333333; }
+      body.settings_page_rw-elephant .js-sortable .wishlist-form-field span.dashicons:hover,
+      body.settings_page_rw-elephant .js-sortable .item-detail span.dashicons:hover,
+      body.settings_page_rw-elephant .js-sortable li.placeholder span.dashicons:hover {
+        cursor: pointer;
+        color: #258ac6; }
+  body.settings_page_rw-elephant .js-sortable li.loading {
+    padding: 0.75em 0 0.75em 0.75em; }
+  body.settings_page_rw-elephant .js-sortable .item-detail.ui-sortable-helper {
+    max-width: 800px; }
+  body.settings_page_rw-elephant .js-sortable tr.ui-sortable-helper {
+    display: table; }
+  body.settings_page_rw-elephant .js-sortable li.placeholder {
+    opacity: 0.5; }
+  body.settings_page_rw-elephant .js-sortable .additional-form-fields {
+    width: 100%;
+    max-width: calc( 300px + 1.5em);
+    padding: 0.5em; }
+  body.settings_page_rw-elephant .js-sortable .ui-sortable-handle .dashicons-menu:hover {
+    cursor: pointer; }
+  body.settings_page_rw-elephant .additional-form-fields {
+    display: inline-block;
+    width: 100%;
+    max-width: 100% !important; }
+    body.settings_page_rw-elephant .additional-form-fields a.js-add-field {
+      margin-left: 5px; }
+  body.settings_page_rw-elephant #edit-field {
+    position: relative; }
+    body.settings_page_rw-elephant #edit-field h2 {
+      margin-top: 0; }
+    body.settings_page_rw-elephant #edit-field ul.options li {
+      display: flex;
+      justify-content: space-between; }
+      body.settings_page_rw-elephant #edit-field ul.options li div.section {
+        width: 45%;
+        margin-bottom: 1em; }
+        body.settings_page_rw-elephant #edit-field ul.options li div.section:last-child {
+          margin-bottom: 0; }
+        body.settings_page_rw-elephant #edit-field ul.options li div.section strong {
+          display: block;
+          margin-bottom: 5px; }
+        body.settings_page_rw-elephant #edit-field ul.options li div.section input {
+          width: 100%; }
+    body.settings_page_rw-elephant #edit-field .preloader {
+      display: block;
+      margin: 0 auto;
+      padding: 4em 5em; }
+      body.settings_page_rw-elephant #edit-field .preloader.updating {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 8em; }
+  body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content {
+    width: 40%;
+    min-width: 450px;
+    max-height: 600px;
+    overflow-y: auto; }
+    body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content span.options-label {
+      display: flex;
+      align-items: center; }
+      body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content span.options-label .js-add-option {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 10px;
+        margin-right: 10px; }
+        body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content span.options-label .js-add-option span {
+          font-size: 10px;
+          height: 10px;
+          width: 10px;
+          margin: 0 0 0 3px; }
+    body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content label {
+      display: block;
+      margin-bottom: 1.5em; }
+      body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content label:last-child {
+        margin-bottom: 0; }
+      body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content label span {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 14px; }
+    body.settings_page_rw-elephant .featherlight.rw-elephant-edit-wishlist-field .featherlight-content input[type="text"] {
+      border: 1px solid #ddd;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+      font-size: 14px;
+      padding: 5px; }
+  body.settings_page_rw-elephant table.thumbnail-image-replacement tr {
+    min-height: 84px; }
+  body.settings_page_rw-elephant table.thumbnail-image-replacement th.center,
+  body.settings_page_rw-elephant table.thumbnail-image-replacement td.center {
+    text-align: center; }
+  body.settings_page_rw-elephant table.thumbnail-image-replacement img.thumb {
+    width: 100%;
+    max-width: 100px; }
+  body.settings_page_rw-elephant table.thumbnail-image-replacement .image-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto; }
+    body.settings_page_rw-elephant table.thumbnail-image-replacement .image-wrap:visible {
+      display: block; }
+    body.settings_page_rw-elephant table.thumbnail-image-replacement .image-wrap .js-remove-image {
+      position: absolute;
+      width: 20px;
+      top: 0;
+      left: 0; }
+    body.settings_page_rw-elephant table.thumbnail-image-replacement .image-wrap img.image-preview {
+      width: 100%;
+      max-width: 100px; }
+  body.settings_page_rw-elephant ul.item-notes li {
+    position: relative;
+    width: 100%;
+    padding: 2em 0.5em;
+    border: 1px solid #cecccc;
+    background: #f7f7f7;
+    border-radius: 3px;
+    max-width: 500px; }
+    body.settings_page_rw-elephant ul.item-notes li.placeholder {
+      max-width: 500px; }
+    body.settings_page_rw-elephant ul.item-notes li .actions {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 55px;
+      text-align: center; }
+    body.settings_page_rw-elephant ul.item-notes li label {
+      display: inline-block;
+      width: 90%;
+      display: flex;
+      align-items: top;
+      flex-grow: 1; }
+      body.settings_page_rw-elephant ul.item-notes li label.text-label {
+        margin-bottom: 1em; }
+      body.settings_page_rw-elephant ul.item-notes li label strong {
+        min-width: 45px;
+        margin-left: 10px;
+        padding: 5px 5px 0 0; }
+      body.settings_page_rw-elephant ul.item-notes li label input,
+      body.settings_page_rw-elephant ul.item-notes li label textarea {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 5px; }
+      body.settings_page_rw-elephant ul.item-notes li label textarea {
+        min-height: 75px;
+        resize: vertical; }
+  body.settings_page_rw-elephant ul.item-notes li.placeholder {
+    opacity: 0.5; }
+  body.settings_page_rw-elephant div.item-page-layout {
+    max-width: 600px;
+    margin: 3em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    body.settings_page_rw-elephant div.item-page-layout label {
+      flex: 1;
+      vertical-align: middle;
+      width: 300px; }
+      body.settings_page_rw-elephant div.item-page-layout label img {
+        width: 100px;
+        margin: 0 10px; }
+      body.settings_page_rw-elephant div.item-page-layout label strong,
+      body.settings_page_rw-elephant div.item-page-layout label img,
+      body.settings_page_rw-elephant div.item-page-layout label input {
+        vertical-align: middle; }
+  body.settings_page_rw-elephant tr.placeholder {
+    background: #EFEFEF;
+    border: 1px dashed grey; }
+  body.settings_page_rw-elephant .wishlist-additional-info-field,
+  body.settings_page_rw-elephant .wishlist-submission-confirmation {
+    width: 100%;
+    max-width: calc( 300px + 1.5em);
+    padding: 0.5em; }
+    body.settings_page_rw-elephant .wishlist-additional-info-field.textarea,
+    body.settings_page_rw-elephant .wishlist-submission-confirmation.textarea {
+      min-height: 150px;
+      resize: vertical; }

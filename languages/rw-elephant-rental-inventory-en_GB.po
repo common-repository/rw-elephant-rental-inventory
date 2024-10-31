@@ -1,0 +1,1124 @@
+# Copyright (c) 2021 RW Elephant. All Rights Reserved.
+msgid ""
+msgstr ""
+"Project-Id-Version: RW Elephant Rental Inventory 2.2.13\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rw-elephant-"
+"rental-inventory\n"
+"POT-Creation-Date: 2021-08-29 03:20:03+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-08-29 04:22+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+
+#: lib/classes/class-api.php:44
+msgid "No 'action' was specified."
+msgstr ""
+
+#: lib/classes/class-api.php:54
+msgid "You are not connected to the RW elephant API."
+msgstr ""
+
+#: lib/classes/class-api.php:223
+msgid ""
+"There was an error during the API request. Please try again. If things "
+"continue to fail, please try increasing the API request timeout."
+msgstr ""
+
+#: lib/classes/class-invoice.php:83
+msgid ""
+"Your site does not appear to be utilizing HTTPS. For security purposes, "
+"paying invoices will not be enabled until you have installed an SSL "
+"certificate and are serving content via HTTPS."
+msgstr ""
+"Your site does not appear to be utilising HTTPS. For security purposes, "
+"paying invoices will not be enabled until you have installed an SSL "
+"certificate and are serving content via HTTPS."
+
+#: lib/classes/class-invoice.php:114
+msgid "Missing or invalid invoice ID."
+msgstr ""
+
+#: lib/classes/class-invoice.php:155
+msgid ""
+"An error occurred retreiving the invoice data, please refresh the page and "
+"try again."
+msgstr ""
+
+#: lib/classes/class-invoice.php:236
+msgid "Error processing your signature."
+msgstr ""
+
+#: lib/classes/class-invoice.php:295
+msgid "Error processing your request. Please refresh the page, and try again."
+msgstr ""
+
+#: lib/classes/class-invoice.php:312
+msgid "Your payment has been successfully processed."
+msgstr ""
+
+#: lib/classes/class-invoice.php:319
+msgid "Invoice:"
+msgstr ""
+
+#: lib/classes/class-invoice.php:323
+msgid "Amount Paid:"
+msgstr ""
+
+#: lib/classes/class-invoice.php:327
+msgid "Payment Date:"
+msgstr ""
+
+#: lib/classes/class-invoice.php:331
+msgid "Method:"
+msgstr ""
+
+#: lib/classes/class-invoice.php:332
+msgid "Credit/Debit Card"
+msgstr ""
+
+#: lib/classes/class-invoice.php:335
+msgid ""
+"Please print this page for your records and check your inbox for an email "
+"from &quot;RW Elephant&quot; confirming your payment."
+msgstr ""
+
+#: lib/classes/class-invoice.php:380
+msgid "We encountered an error. Please try again."
+msgstr ""
+
+#: lib/classes/class-invoice.php:433
+msgid "Pay Invoice"
+msgstr ""
+
+#: lib/classes/class-invoice.php:434
+msgid "Please select a valid amount."
+msgstr ""
+
+#: lib/classes/class-invoice.php:485 lib/classes/class-invoice.php:512
+msgid "Rental Order"
+msgstr ""
+
+#: lib/classes/class-options.php:97 lib/classes/class-options.php:449
+msgid "general"
+msgstr ""
+
+#: lib/classes/class-options.php:136 lib/classes/class-options.php:138
+#: lib/helpers.php:2576
+msgid "Price"
+msgstr ""
+
+#: lib/classes/class-options.php:140 lib/classes/class-options.php:142
+#: lib/helpers.php:2571
+msgid "Description"
+msgstr ""
+
+#: lib/classes/class-options.php:144 lib/classes/class-options.php:146
+#: lib/helpers.php:2581
+msgid "Quantity"
+msgstr ""
+
+#: lib/classes/class-options.php:148 lib/classes/class-options.php:150
+#: lib/helpers.php:2586
+msgid "Dimensions"
+msgstr ""
+
+#: lib/classes/class-options.php:152 lib/classes/class-options.php:154
+#: lib/helpers.php:2591
+msgid "Tags"
+msgstr ""
+
+#: lib/classes/class-options.php:156 lib/classes/class-options.php:158
+#: lib/helpers.php:2596
+msgid "Custom ID"
+msgstr ""
+
+#: lib/classes/class-options.php:160 lib/classes/class-options.php:162
+#: lib/helpers.php:2601
+msgid "Custom Field 1"
+msgstr ""
+
+#: lib/classes/class-options.php:164 lib/classes/class-options.php:166
+#: lib/helpers.php:2608
+msgid "Custom Field 2"
+msgstr ""
+
+#: lib/classes/class-options.php:172
+msgid "Questions?"
+msgstr ""
+
+#: lib/classes/class-options.php:183
+msgid "First Name"
+msgstr ""
+
+#: lib/classes/class-options.php:189
+msgid "Last Name"
+msgstr ""
+
+#: lib/classes/class-options.php:195
+msgid "Email Address"
+msgstr ""
+
+#: lib/classes/class-options.php:201
+msgid "Phone Number"
+msgstr ""
+
+#: lib/classes/class-options.php:207 lib/classes/class-options.php:220
+msgid "Event Date"
+msgstr ""
+
+#: lib/classes/class-options.php:219
+msgid "Invoice"
+msgstr ""
+
+#: lib/classes/class-options.php:221
+msgid "Client"
+msgstr ""
+
+#: lib/classes/class-options.php:246 lib/classes/class-options.php:866
+msgid "General"
+msgstr ""
+
+#: lib/classes/class-options.php:247 lib/classes/class-walkthrough.php:200
+#: lib/classes/class-walkthrough.php:337
+msgid "Gallery"
+msgstr ""
+
+#: lib/classes/class-options.php:248
+msgid "Categories"
+msgstr ""
+
+#: lib/classes/class-options.php:249
+msgid "Items"
+msgstr ""
+
+#: lib/classes/class-options.php:250 lib/classes/class-walkthrough.php:218
+#: lib/classes/class-walkthrough.php:357
+msgid "Wishlist"
+msgstr ""
+
+#: lib/classes/class-options.php:251
+msgid "Payments"
+msgstr ""
+
+#: lib/classes/class-options.php:289
+msgid "Add Field"
+msgstr ""
+
+#: lib/classes/class-options.php:290
+msgid ""
+"An error occurred when adding the field to the wishlist form. Please try "
+"again."
+msgstr ""
+
+#: lib/classes/class-options.php:291
+msgid "An error occurred retreiving field data. Please try again."
+msgstr ""
+
+#: lib/classes/class-options.php:292
+msgid "We were unable to update your form field. Please try again."
+msgstr ""
+
+#: lib/classes/class-options.php:293
+msgid "Are you sure you want to remove this field from the wishlist form?"
+msgstr ""
+
+#: lib/classes/class-options.php:296
+msgid "Enabled."
+msgstr ""
+
+#: lib/classes/class-options.php:297
+msgid "Disabled."
+msgstr ""
+
+#: lib/classes/class-options.php:300 lib/classes/class-options.php:1731
+msgid "Cache is enabled."
+msgstr ""
+
+#: lib/classes/class-options.php:301 lib/classes/class-options.php:1731
+msgid "Cache is disabled."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "RW Elephant Rental Inventory"
+msgstr ""
+
+#: lib/classes/class-options.php:321 lib/classes/class-options.php:1688
+msgid "RW Elephant"
+msgstr ""
+
+#: lib/classes/class-options.php:451 lib/classes/class-plugin.php:105
+#: lib/classes/class-plugin.php:106
+msgid "Account"
+msgstr ""
+
+#: lib/classes/class-options.php:455 lib/classes/class-walkthrough.php:157
+msgid "RWE Tenant ID"
+msgstr ""
+
+#: lib/classes/class-options.php:461 lib/classes/class-walkthrough.php:162
+msgid "RWE API Key"
+msgstr ""
+
+#: lib/classes/class-options.php:467
+msgid "API Connection Status"
+msgstr ""
+
+#. translators: Dashicon (dashicon-yes)
+#: lib/classes/class-options.php:473
+msgid "%s Connected"
+msgstr ""
+
+#. translators: Dashicon (dashicon-no-alt)
+#: lib/classes/class-options.php:477
+msgid "%s Not Connected"
+msgstr ""
+
+#: lib/classes/class-options.php:498
+msgid "Pages"
+msgstr ""
+
+#: lib/classes/class-options.php:502
+msgid "Gallery Page"
+msgstr ""
+
+#: lib/classes/class-options.php:508
+msgid "Wishlist Page"
+msgstr ""
+
+#: lib/classes/class-options.php:518
+msgid "gallery"
+msgstr ""
+
+#: lib/classes/class-options.php:521
+msgid "Listing Image Thumbnails"
+msgstr ""
+
+#: lib/classes/class-options.php:522
+msgid "Choose a format for thumbnail images"
+msgstr ""
+
+#: lib/classes/class-options.php:526
+msgid "Thumbnail Format"
+msgstr ""
+
+#: lib/classes/class-options.php:529
+msgid "Padded"
+msgstr ""
+
+#: lib/classes/class-options.php:534
+msgid "Cropped"
+msgstr ""
+
+#: lib/classes/class-options.php:543
+msgid "Theme"
+msgstr ""
+
+#: lib/classes/class-options.php:547
+msgid "Style"
+msgstr ""
+
+#: lib/classes/class-options.php:554 lib/classes/class-options.php:812
+msgid "Default"
+msgstr ""
+
+#: lib/classes/class-options.php:555
+msgid "Overlay"
+msgstr ""
+
+#: lib/classes/class-options.php:556
+msgid "Polaroid"
+msgstr ""
+
+#: lib/classes/class-options.php:575
+msgid "Styles"
+msgstr ""
+
+#: lib/classes/class-options.php:576
+msgid "Gallery Colours (Hex Colour Codes)"
+msgstr ""
+
+#: lib/classes/class-options.php:580
+msgid "Primary Button"
+msgstr ""
+
+#: lib/classes/class-options.php:586
+msgid "Primary Button Hover"
+msgstr ""
+
+#: lib/classes/class-options.php:592
+msgid "Primary Button Text"
+msgstr ""
+
+#: lib/classes/class-options.php:598
+msgid "Secondary Button"
+msgstr ""
+
+#: lib/classes/class-options.php:604
+msgid "Secondary Button Hover"
+msgstr ""
+
+#: lib/classes/class-options.php:610
+msgid "Secondary Button Text"
+msgstr ""
+
+#: lib/classes/class-options.php:616
+msgid "Border Colour"
+msgstr ""
+
+#: lib/classes/class-options.php:626
+msgid "categories"
+msgstr ""
+
+#: lib/classes/class-options.php:631
+msgid "Thumbnail Image Replacement"
+msgstr ""
+
+#: lib/classes/class-options.php:638
+msgid "No categories found."
+msgstr ""
+
+#: lib/classes/class-options.php:646
+msgid "Category Name"
+msgstr ""
+
+#: lib/classes/class-options.php:647
+msgid "Default Image"
+msgstr ""
+
+#: lib/classes/class-options.php:648
+msgid "Custom Image"
+msgstr ""
+
+#: lib/classes/class-options.php:664
+msgid "Add Image"
+msgstr ""
+
+#: lib/classes/class-options.php:680 lib/classes/class-options.php:1533
+msgid "items"
+msgstr ""
+
+#: lib/classes/class-options.php:683
+msgid "Item Detail"
+msgstr ""
+
+#: lib/classes/class-options.php:687
+msgid "Field"
+msgstr ""
+
+#: lib/classes/class-options.php:688
+msgid "Show"
+msgstr ""
+
+#: lib/classes/class-options.php:689 lib/classes/class-options.php:730
+#: lib/classes/class-options.php:752 lib/classes/class-options.php:770
+msgid "Title"
+msgstr ""
+
+#: lib/classes/class-options.php:690
+msgid "Reorder"
+msgstr ""
+
+#: lib/classes/class-options.php:699
+msgid "Item Notes"
+msgstr ""
+
+#. translators: + icon.
+#: lib/classes/class-options.php:704
+msgid "%s Add a note"
+msgstr ""
+
+#: lib/classes/class-options.php:731
+msgid "Additional Note:"
+msgstr ""
+
+#: lib/classes/class-options.php:734 lib/classes/class-options.php:756
+#: lib/classes/class-options.php:774 lib/classes/class-options.php:931
+msgid "Text"
+msgstr ""
+
+#: lib/classes/class-options.php:781
+msgid "Display Pinterest Button"
+msgstr ""
+
+#: lib/classes/class-options.php:787
+msgid "Display Contact Button"
+msgstr ""
+
+#: lib/classes/class-options.php:793
+msgid "Contact Title"
+msgstr ""
+
+#: lib/classes/class-options.php:799
+msgid "Contact Email Address"
+msgstr ""
+
+#: lib/classes/class-options.php:808
+msgid "Item Page Layout"
+msgstr ""
+
+#: lib/classes/class-options.php:809
+msgid ""
+"Prefer your item details to appear on the left and item images on the right? "
+"Switch to reversed!"
+msgstr ""
+
+#: lib/classes/class-options.php:817
+msgid "Reversed"
+msgstr ""
+
+#: lib/classes/class-options.php:824
+msgid "Kit Options"
+msgstr ""
+
+#: lib/classes/class-options.php:828
+msgid "Display Kit Contents"
+msgstr ""
+
+#: lib/classes/class-options.php:834
+msgid "Kit Contents Title"
+msgstr ""
+
+#: lib/classes/class-options.php:836 lib/helpers.php:1516
+msgid "Kit Contains"
+msgstr ""
+
+#: lib/classes/class-options.php:843
+msgid "Other Options"
+msgstr ""
+
+#: lib/classes/class-options.php:847
+msgid "Display Related Items"
+msgstr ""
+
+#: lib/classes/class-options.php:853
+msgid "Related Items Title"
+msgstr ""
+
+#: lib/classes/class-options.php:855 lib/helpers.php:1571
+msgid "You might also like"
+msgstr ""
+
+#: lib/classes/class-options.php:863 lib/classes/class-options.php:1540
+msgid "wishlist"
+msgstr ""
+
+#: lib/classes/class-options.php:870
+msgid "Enable Wishlists"
+msgstr ""
+
+#: lib/classes/class-options.php:879
+msgid "Wishlist Form Fields"
+msgstr ""
+
+#: lib/classes/class-options.php:880
+msgid "The following wishlist form fields are required."
+msgstr ""
+
+#: lib/classes/class-options.php:893
+msgid "Additional Form Fields"
+msgstr ""
+
+#: lib/classes/class-options.php:921
+msgid "Additional Information Section"
+msgstr ""
+
+#: lib/classes/class-options.php:925
+msgid "Heading"
+msgstr ""
+
+#: lib/classes/class-options.php:927
+msgid "Additional Information"
+msgstr ""
+
+#: lib/classes/class-options.php:933
+msgid "Wishlist items."
+msgstr ""
+
+#: lib/classes/class-options.php:941
+msgid "payments"
+msgstr ""
+
+#: lib/classes/class-options.php:944 lib/helpers.php:102
+msgid "Order Details"
+msgstr ""
+
+#: lib/classes/class-options.php:945
+msgid "Sort"
+msgstr ""
+
+#: lib/classes/class-options.php:988
+msgid "Edit Wishlist Form Field"
+msgstr ""
+
+#: lib/classes/class-options.php:1145
+msgid "Type"
+msgstr ""
+
+#: lib/classes/class-options.php:1151 lib/classes/class-options.php:1198
+#: lib/classes/class-options.php:1234
+msgid "Label"
+msgstr ""
+
+#: lib/classes/class-options.php:1156
+msgid "Required"
+msgstr ""
+
+#: lib/classes/class-options.php:1173
+msgid "Options"
+msgstr ""
+
+#: lib/classes/class-options.php:1173
+msgid "Add Option"
+msgstr ""
+
+#: lib/classes/class-options.php:1196 lib/classes/class-options.php:1230
+msgid "Key"
+msgstr ""
+
+#: lib/classes/class-options.php:1208 lib/classes/class-options.php:1217
+msgid "No options set."
+msgstr ""
+
+#: lib/classes/class-options.php:1247
+msgid "Update Form Field"
+msgstr ""
+
+#: lib/classes/class-options.php:1277
+msgid "Field data is missing."
+msgstr ""
+
+#: lib/classes/class-options.php:1326 lib/classes/class-options.php:1352
+msgid "Option not found."
+msgstr ""
+
+#: lib/classes/class-options.php:1358
+msgid "Field data missing."
+msgstr ""
+
+#: lib/classes/class-options.php:1585
+msgid "No pages found."
+msgstr ""
+
+#: lib/classes/class-options.php:1634
+msgid "Settings successfully updated."
+msgstr ""
+
+#: lib/classes/class-options.php:1663
+msgid "Cache successfully flushed."
+msgstr ""
+
+#: lib/classes/class-options.php:1693
+msgid ""
+"Mighty Inventory Software that's friendly and easy to use. Welcome to the "
+"fresh new world of online inventory management for your rental business."
+msgstr ""
+
+#: lib/classes/class-options.php:1710
+msgid "Flush Cached Data"
+msgstr ""
+
+#: lib/classes/class-options.php:1713
+msgid ""
+"RW Elephant inventory data is cached locally to improve performance. If "
+"changes were made to your inventory but are not reflected on the site you "
+"can flush cache to retreive new data."
+msgstr ""
+
+#: lib/classes/class-options.php:1719
+msgid "Flush Cache"
+msgstr ""
+
+#: lib/classes/class-options.php:1723
+msgid "<code>WP_DEBUG</code> is enabled. Caching is disabled."
+msgstr ""
+
+#: lib/classes/class-options.php:1738
+msgid "Toggle Cache"
+msgstr ""
+
+#: lib/classes/class-plugin.php:98 lib/classes/class-plugin.php:99
+msgid "Settings"
+msgstr ""
+
+#: lib/classes/class-single-item.php:31
+msgid "Missing inventory ID."
+msgstr ""
+
+#: lib/classes/class-single-item.php:77
+msgid "No product data found."
+msgstr ""
+
+#: lib/classes/class-single-item.php:177
+#: lib/classes/shortcodes/class-wishlist.php:419
+msgid "Invalid date format."
+msgstr ""
+
+#: lib/classes/class-template-loader.php:374
+#: lib/classes/class-template-loader.php:380
+msgid "RW Elephant Invoice"
+msgstr ""
+
+#: lib/classes/class-upgrade.php:55 lib/classes/class-upgrade.php:56
+msgid "RW Elephant Rental Inventory - Upgrade"
+msgstr ""
+
+#: lib/classes/class-upgrade.php:115
+msgid ""
+"Error encountered during the upgrade routine. Please try again. If the error "
+"persists, please contact RW Elephant support."
+msgstr ""
+
+#: lib/classes/class-upgrade.php:152
+msgid "Upgrade"
+msgstr ""
+
+#: lib/classes/class-upgrade.php:160
+msgid "An error occurred. Please go back and try again."
+msgstr ""
+
+#: lib/classes/class-upgrade.php:240
+msgid "Sit Tight!"
+msgstr ""
+
+#: lib/classes/class-upgrade.php:242
+msgid ""
+"We're working on getting the RW Elephant Gallery plugin up to speed. This "
+"should only take a few moments. You will be redirected when the process "
+"completes."
+msgstr ""
+
+#: lib/classes/class-upgrade.php:313
+msgid ""
+"It looks like an upgrade is available for the RW Elephant settings. To "
+"ensure the RW Elephant Rental Inventory plugin continues to work without "
+"issue, please proceed with the upgrade now."
+msgstr ""
+
+#: lib/classes/class-upgrade.php:316
+msgid "Upgrade Now"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:84
+msgid "Success"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:107 lib/classes/class-walkthrough.php:139
+#: lib/classes/class-walkthrough.php:181 lib/classes/class-walkthrough.php:248
+#: lib/classes/class-walkthrough.php:278
+msgid "RW Elephant Plugin Setup"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:108
+msgid "Step 1 of 4"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:120
+msgid ""
+"The RW Elephant WordPress Plugin enables rental businesses to seamlessly "
+"display their collection on their own websites. Easily show your customers "
+"your Rental Items with the images, descriptions, tags, and all of the other "
+"important details you've included in your RW Elephant account."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:121
+msgid ""
+"Using the plugin requires a monthly subscription to RW Elephant. If you "
+"don't already have an RW Elephant account, you can get started for free with "
+"a free trial. Upgrade or downgrade at anytime. No contracts. No sweat. Start "
+"your trail today and change your rental business for the better!"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:122
+msgid "Start your free trial"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:129
+msgid "I have an existing account, let's go!"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:140
+msgid "Step 2 of 4"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:154
+msgid ""
+"Start by entering your RW Elephant Tenant ID and API Key form the RW "
+"Elephant Application. You'll find those under the Account Icon (upper right "
+"corner of the application), then click on \"Online Gallery Settings\" in the "
+"list on the left."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:171 lib/classes/class-walkthrough.php:238
+#: templates/invoice-pay.php:53
+msgid "Continue"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:182
+msgid "Step 3 of 4"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:194
+msgid ""
+"The plugin will need two initial pages in order to function on your "
+"WordPress website. One page will display the \"Inventory Gallery\" and the "
+"other will display \"Wishlist\" functionality."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:195
+msgid ""
+"If you haven't created these pages on your site, the plugin will "
+"automatically generate them now. If you have, you can select both pages "
+"below:"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:198
+msgid "Gallery page"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:207 lib/classes/class-walkthrough.php:224
+msgid "Choose page"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:216
+msgid "Wishlist page"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:237 lib/classes/class-walkthrough.php:267
+msgid "Back"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:249
+msgid "Step 4 of 4"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:259
+msgid ""
+"Ok! That should cover all the basic information that we'll need to get you "
+"set up! In the following step, the plugin will apply your choosen settings "
+"and generate any required pages."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:260
+msgid ""
+"If you want to make any last minute changes, feel free navigate back and do "
+"so now. You'll also be able to update all plugin settings at a later time "
+"within the RW Elephant plugin settings page."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:268
+msgid "Finish!"
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:279
+msgid "Setting up plugin..."
+msgstr ""
+
+#. translators: Link to the settings page.
+#: lib/classes/class-walkthrough.php:318
+msgid ""
+"We encountered an error setting up the plugin. Head to the %s to manually "
+"setup the plugin."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:322 lib/classes/class-walkthrough.php:399
+#: lib/classes/shortcodes/class-gallery.php:88
+msgid "settings page"
+msgstr ""
+
+#. translators: Link to the settings page.
+#: lib/classes/class-walkthrough.php:395
+msgid ""
+"RW Elephant Rental Inventory is successfully setup. Head to the %s to adjust "
+"the appearance of your product inventory."
+msgstr ""
+
+#: lib/classes/class-walkthrough.php:475
+msgid "An error occurred. Double check your API key and try again."
+msgstr ""
+
+#: lib/classes/class-wishlist-api.php:66
+msgid "There was an error creating the session ID."
+msgstr ""
+
+#: lib/classes/class-wishlist-api.php:98
+msgid "Wishlist not created. No event date specified."
+msgstr ""
+
+#: lib/classes/class-wishlist-api.php:119
+msgid "There was an error creating the wishlist."
+msgstr ""
+
+#: lib/classes/class-wishlist-api.php:231
+msgid "There was an error finalizing and submitting the wishlist."
+msgstr "There was an error finalising and submitting the wishlist."
+
+#: lib/classes/shortcodes/class-gallery.php:78
+msgid "Gallery unavailable. Please try back later."
+msgstr ""
+
+#. translators: Link to the settings page.
+#: lib/classes/shortcodes/class-gallery.php:84
+msgid "You are not connected to the API. Please check the %s."
+msgstr ""
+
+#: lib/classes/shortcodes/class-gallery.php:319
+#: lib/classes/shortcodes/class-gallery.php:409
+#: lib/classes/shortcodes/class-gallery.php:575
+msgid "Error processing your request, please refresh and try again."
+msgstr ""
+
+#: lib/classes/shortcodes/class-gallery.php:491
+msgid "All Rentals"
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:317
+msgid "Add More Items"
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:317
+msgid "View Wishlist"
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:329 lib/helpers.php:2377
+#: templates/submit-wishlist.php:144
+msgid "Submit Wishlist"
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:400
+msgid "Your wishlist has been submitted. Keep an eye out for an email from us."
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:453
+msgid "Submit"
+msgstr ""
+
+#: lib/classes/shortcodes/class-wishlist.php:518
+msgid "There was an error."
+msgstr ""
+
+#: lib/classes/widgets/class-wishlistwidget.php:22
+msgid "RW Elephant Wishlist"
+msgstr ""
+
+#: lib/classes/widgets/class-wishlistwidget.php:24
+msgid "Display the current wishlist items."
+msgstr ""
+
+#: lib/classes/widgets/class-wishlistwidget.php:105 lib/helpers.php:1673
+#: lib/helpers.php:1924
+msgid "You haven't added anything to your wishlist yet."
+msgstr ""
+
+#: lib/classes/widgets/class-wishlistwidget.php:109 lib/helpers.php:1677
+#: lib/helpers.php:1927
+msgid "Get Started"
+msgstr ""
+
+#: lib/classes/widgets/class-wishlistwidget.php:133
+msgid "Title:"
+msgstr ""
+
+#: lib/helpers.php:166
+msgid "Step 1: Sign"
+msgstr ""
+
+#: lib/helpers.php:168
+msgid "Terms &amp; Conditions"
+msgstr ""
+
+#: lib/helpers.php:200
+msgid "Draw E-Signature"
+msgstr ""
+
+#: lib/helpers.php:201
+msgid "Upload Signature"
+msgstr ""
+
+#: lib/helpers.php:202
+msgid "Type Name"
+msgstr ""
+
+#: lib/helpers.php:207
+msgid "Add signature…"
+msgstr ""
+
+#: lib/helpers.php:209
+msgid "Clear"
+msgstr ""
+
+#: lib/helpers.php:215
+msgid "Signature Upload:"
+msgstr ""
+
+#: lib/helpers.php:222
+msgid ""
+"By typing my name below, I understand this will repesent my electronic "
+"signature."
+msgstr ""
+
+#: lib/helpers.php:229
+msgid "Type Name:"
+msgstr ""
+
+#: lib/helpers.php:234
+msgid "Email:"
+msgstr ""
+
+#: lib/helpers.php:240
+msgid "By electronically signing my name, I agree to the Terms and Conditions."
+msgstr ""
+
+#: lib/helpers.php:245
+msgid "Continue to Payment"
+msgstr ""
+
+#. translators: The formatted date the invoice is due.
+#: lib/helpers.php:1014
+msgid "Your remaining balance will be due on %s."
+msgstr ""
+
+#. translators: The formatted date the invoice is due.
+#: lib/helpers.php:1024
+msgid "Your remaining balance is due today."
+msgstr ""
+
+#. translators: The formatted date the invoice is due.
+#: lib/helpers.php:1034
+msgid "Your remaining balance was due on %s."
+msgstr ""
+
+#: lib/helpers.php:1051 lib/helpers.php:1055
+msgid "Charge this card now."
+msgstr ""
+
+#: lib/helpers.php:1055
+msgid "Charge this card on that date."
+msgstr ""
+
+#: lib/helpers.php:1476
+msgid "We were unable to retreive tags."
+msgstr ""
+
+#: lib/helpers.php:1634
+msgid ""
+"Wishlists are not enabled on the site right now. Please check back at a "
+"later time."
+msgstr ""
+
+#: lib/helpers.php:1715
+msgid "Quantity:"
+msgstr ""
+
+#: lib/helpers.php:2010
+msgid "Add to Wishlist"
+msgstr ""
+
+#: lib/helpers.php:2017
+msgid "Remove from Wishlist"
+msgstr ""
+
+#. translators: 1. The tag name. eg: Brown
+#: lib/helpers.php:2199 lib/helpers.php:2217 lib/helpers.php:2275
+#: lib/helpers.php:2298
+msgid "Tag: %s"
+msgstr ""
+
+#. translators: 1. The searched term. eg: Chair
+#: lib/helpers.php:2366
+msgid "Search: %s"
+msgstr ""
+
+#: lib/helpers.php:2375
+msgid "Inventory"
+msgstr ""
+
+#: lib/helpers.php:2376
+msgid "Your Wishlist"
+msgstr ""
+
+#: lib/helpers.php:2392 lib/helpers.php:2401
+msgid "Breadcrumb"
+msgstr ""
+
+#: lib/helpers.php:2452
+msgid "Search"
+msgstr ""
+
+#: lib/helpers.php:2453
+msgid "Search Inventory…"
+msgstr ""
+
+#: lib/helpers.php:2919 lib/helpers.php:2920
+msgid "Pin Item"
+msgstr ""
+
+#: lib/helpers.php:2932
+msgid "Have questions? Get in contact with us."
+msgstr ""
+
+#. translators: 1. The minimum support PHP version for this plugin.
+#: rw-elephant-rental-inventory.php:90
+msgid ""
+"RW Elephant Rental Inventory requires PHP version %s or higher. Please "
+"contact your system administrator."
+msgstr ""
+
+#: templates/invoice-pay.php:12
+msgid "Step 2: Pay"
+msgstr ""
+
+#: templates/invoice-pay.php:14
+msgid "Payment"
+msgstr ""
+
+#: templates/invoice-pay.php:19
+msgid "Today's Payment"
+msgstr ""
+
+#: templates/invoice-pay.php:22
+msgid "Full Invoice Amount:"
+msgstr ""
+
+#: templates/invoice-pay.php:30
+msgid "Minimum Required Deposit:"
+msgstr ""
+
+#: templates/invoice-pay.php:38
+msgid "Other Amount:"
+msgstr ""
+
+#: templates/invoice-pay.php:43
+msgid "Amount:"
+msgstr ""
+
+#: templates/invoice-pay.php:48
+msgid "Future Payments"
+msgstr ""
+
+#: templates/no-products.php:19
+msgid "No Rentals Found."
+msgstr ""
+
+#: templates/submit-wishlist.php:55
+msgid "Use the arrow keys to pick a date"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.rwelephant.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Gallery displays R.W. Elephant rental inventory on your website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "R.W. Elephant"
+msgstr ""
